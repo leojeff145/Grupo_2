@@ -132,6 +132,7 @@
     <ClCompile Include="Persona.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ControlRegistro.h" />
     <ClInclude Include="Empleado.h" />
     <ClInclude Include="ListaDoble.h" />
     <ClInclude Include="Nodo_Doble.h" />

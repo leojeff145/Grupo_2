@@ -1,11 +1,7 @@
-/***********************************************************************
- * Module:  Fecha.cpp
- * Author:  jeffe
- * Modified: martes, 20 de diciembre de 2022 20:43:50
- * Purpose: Implementation of the class Fecha
- ***********************************************************************/
 
 #include "Fecha.h"
+#include <iostream>
+#include <ctime>
 
 ////////////////////////////////////////////////////////////////////////
 // Name:       Fecha::Fecha()
@@ -110,5 +106,14 @@ void Fecha::setAnio(short newAnio)
 
 short Fecha::calcEdad(Fecha fechNacimiento)
 {
-   // TODO : implement
+	time_t t = time(nullptr);
+	tm* now = localtime(&t);
+	short edad = now->tm_year + 1900 - fechNacimiento.getAnio();
+	if (now->tm_mon + 1 < fechNacimiento.getMes())
+		edad--;
+	else if (now->tm_mon + 1 == fechNacimiento.getMes())
+		if (now->tm_mday < fechNacimiento.getDia())
+			edad--;
+	return edad;	
 }
+

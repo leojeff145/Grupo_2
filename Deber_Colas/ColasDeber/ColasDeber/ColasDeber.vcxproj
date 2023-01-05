@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{916c8c8a-240d-4b6f-839a-9ab36a9442ad}</ProjectGuid>
-    <RootNamespace>Colas</RootNamespace>
+    <ProjectGuid>{3c159209-01ea-434b-a64b-062f9f6bcbd5}</ProjectGuid>
+    <RootNamespace>ColasDeber</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,23 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClienteTiempo.cpp" />
-    <ClCompile Include="ControlRegistro.cpp" />
-    <ClCompile Include="Fecha.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NumCalc.cpp" />
-    <ClCompile Include="Persona.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ClienteTiempo.h" />
-    <ClInclude Include="Cola.h" />
-    <ClInclude Include="ControlRegistro.h" />
-    <ClInclude Include="Fecha.h" />
-    <ClInclude Include="NodoDoble.h" />
-    <ClInclude Include="NumCalc.h" />
-    <ClInclude Include="Persona.h" />
-    <ClInclude Include="Tiempos.h" />
-    <ClInclude Include="Validacion.h" />
+    <ClCompile Include="ColasDeber.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

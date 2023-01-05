@@ -1,13 +1,4 @@
-/***********************************************************************
- * Module:  Tiempos.h
- * Author:  jeffe
- * Modified: martes, 20 de diciembre de 2022 20:43:50
- * Purpose: Declaration of the class Tiempos
- ***********************************************************************/
-
-#if !defined(__Simulacion_Cola2_Tiempos_h)
-#define __Simulacion_Cola2_Tiempos_h
-
+#pragma once
 class Tiempos
 {
 public:
@@ -22,5 +13,3 @@ protected:
 private:
 
 };
-
-#endif

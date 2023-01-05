@@ -1,12 +1,4 @@
-/***********************************************************************
- * Module:  Persona.cpp
- * Author:  jeffe
- * Modified: martes, 20 de diciembre de 2022 20:43:50
- * Purpose: Implementation of the class Persona
- ***********************************************************************/
 
-#include "Tiempos.h"
-#include "Fecha.h"
 #include "Persona.h"
 
 ////////////////////////////////////////////////////////////////////////
@@ -112,7 +104,7 @@ void Persona::setNombre(std::string newNombre)
 
 Fecha Persona::getEdad(void)
 {
-   return edad;
+	return edad;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -127,3 +119,4 @@ void Persona::setEdad(Fecha newEdad)
 {
    edad = newEdad;
 }
+
